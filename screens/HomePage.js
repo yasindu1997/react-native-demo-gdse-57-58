@@ -10,8 +10,16 @@ export default function HomePage(props) {
 
     //life cycle hook
     useEffect(()=>{
-
+        console.log("Hellooooooooooooo")
+        //api call
+        //array data danna
     })
+
+    useEffect(()=>{
+        console.log("Hellooooooooooooo")
+        //api call
+        //array data danna
+    },[userName,password])
 
     //arrow function
     const printStates=()=>{

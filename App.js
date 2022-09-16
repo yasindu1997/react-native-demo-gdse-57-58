@@ -7,7 +7,6 @@ export default function App() {
     <View>
       <Text>App</Text>
       <HomePage pageTitle="Yasindu's Home Page" placeHolder1="Yasindu's password"/>
-      <HomePage pageTitle="Kavindu's Home Page" placeHolder1="Kavindu's password"/>
     </View>
   )
 }
