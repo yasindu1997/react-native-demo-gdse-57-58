@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NativeBaseProvider, Text, Input, VStack, Button } from 'native-base'
 import { Alert } from 'react-native';
 
-export default function AddData() {
+export default function AddData({navigation}) {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [id, setId] = useState('');
@@ -32,6 +32,9 @@ export default function AddData() {
                 <Input mx="3" value={id} onChangeText={(e) => { setId(e) }} placeholder="User ID" w="80%" />
                 <Button size="md" variant="subtle" colorScheme="secondary" onPress={saveData}>
                     Save Post
+                </Button>
+                <Button size="md" variant="subtle" colorScheme="green" onPress={()=>{navigation.navigate("LoadData")}}>
+                    Clik To Load Data
                 </Button>
             </VStack>
         </NativeBaseProvider>
